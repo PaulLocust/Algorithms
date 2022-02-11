@@ -1,0 +1,7 @@
+def perimeter(n):
+    def fib(n):
+        a, b = 1, 1
+        for _ in range(n + 1):
+            yield a
+            a, b = b, a + b
+    return sum(list(fib(n))) * 4
